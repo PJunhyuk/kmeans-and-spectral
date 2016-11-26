@@ -18,7 +18,7 @@ spectral_clust(D, 2, 1);
 ```
 
 ## Results
-You can check time required, number of rules(by check size of rule), five most confidence rules(by check five_rule variable), and longest rule(by check longest_rule variable)
+
 
 #### Sample Results
 Input:
@@ -35,6 +35,9 @@ cluster times:
 time required: 
      2.221999    .
 ```
+
+## K-means mechanism
+![Alt Text](https://github.com/PJunhyuk/kmeans-and-spectral/blob/master/img/kmeans-mechanism_1.png)
 
 ## Code Structure
 -	my_kmeans.m : Calculate label using k-mean algorithm.
