@@ -1,40 +1,40 @@
 # kmeans-and-spectral
-Clustering toy datasets using K-means algorithm and Spectral Clusting algorithm
+Clustering toy datasets using K-means algorithm and Spectral Clustering algorithm
 
 ## Usage
   1. Download Matlab functions in src folder, and toy dataset in toydata folder
   1. Open toydata file
   1. Set data, and set K which is suitable for it (and sigma for spectral_clust function)
 - Suggested sigma value is 1
-  
 #### Sample Usage
+###### Clustering data_Aggregation using K-means algorithm
 ```
 load('data_Aggregation.mat');
 my_kmeans(D, 7);
 ```
+###### Clustering data_TwoDiamonds using Spectral Clustering algorithm
 ```
 load('data_TwoDiamonds.mat');
 spectral_clust(D, 2, 1);
 ```
+###### Show correct answer of data_Spiral using given label(L)
+```
+load('data_Spiral.mat');
+visualize_result(D, L);
+```
 
 ## Results
-
+You can check clustering results in form of 'label', and you can check visualized result by using 'visualize_result' function and 'visualize_centroids' function. It is also built in 'my_kmeans' function and 'spectral_clust' function.
+And you can check cluster times, and time required on each implementation.
 
 #### Sample Results
-Input:
-```
-load('data_TwoDiamonds.mat');
-my_kmeans(D, 2);
-```
-Output:
-![Alt Text](https://github.com/PJunhyuk/kmeans-and-spectral/blob/master/img/sample_result_1.png)
-```
-cluster times: 
-     7
-
-time required: 
-     2.221999    .
-```
+###### Result-set of data_Aggregation
+![Alt Text](https://github.com/PJunhyuk/kmeans-and-spectral/blob/master/img/aggregation_set_1.png)
+###### Result-set of data_Spiral
+![Alt Text](https://github.com/PJunhyuk/kmeans-and-spectral/blob/master/img/spiral_set_1.png)
+###### Result-set of data_TwoDiamonds
+![Alt Text](https://github.com/PJunhyuk/kmeans-and-spectral/blob/master/img/twodiamonds_set_1.png)
+All data-set is in order: K-means, Spectral Clustering, and given label.
 
 ## K-means mechanism
 ![Alt Text](https://github.com/PJunhyuk/kmeans-and-spectral/blob/master/img/kmeans-mechanism_1.png)
