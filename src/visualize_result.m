@@ -3,6 +3,7 @@ function visualize_result(data, label)
 
 %% get global variables
 global N
+N = size(data, 1);
 
 %% visualize data: it's shape is ., and different colors used as per labels
 for i=1:N

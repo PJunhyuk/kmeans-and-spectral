@@ -55,6 +55,7 @@ matrix_Y = normc(matrix_X);
 %% cluster them using K-means algorithm
 % use my_kmeans_no_visualize, because we don't need visualize functions in
 % my_kmeans function
+
 label = my_kmeans_no_visualize(matrix_Y, K);
 
 %% visualize result
