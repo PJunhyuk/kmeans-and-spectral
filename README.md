@@ -40,6 +40,18 @@ All data-set is in order: K-means, Spectral Clustering, and given label.
 
 ## K-means mechanism
 ![Alt Text](https://github.com/PJunhyuk/kmeans-and-spectral/blob/master/img/kmeans-mechanism_1.png)
+## Spectral Clustering mechanism
+
+1. N : number of data
+1. d : dimension of data
+1. data = D - N by d matrix
+1. matrix_A : affinity matrix, A_ij = exp(- (data_i - data_j)^2 / (2*sigma^2) ) - N by N matrix
+1. matrix_D : diagonal matrix whose (i,i)-element is the sum of matrix_A's i-th row - N by N matrix
+1. matrix_L : (D^(-1/2)) * A * (D^(-1/2)) - N by N matrix
+1. matrix_X : union of k largest eigenvectors of matrix_L - N by K matrix
+1. matrix_L : renormalizing each of X's rows to have unit length - N by K matrix
+1. Set matrix_L to data, and run K-means algorithm, and save it's result on label.
+1. Visualize data using that label.
 
 ## Code Structure
 -	my_kmeans.m : Calculate label using k-mean algorithm.
