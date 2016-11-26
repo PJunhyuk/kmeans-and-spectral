@@ -27,7 +27,7 @@ load('data_TwoDiamonds.mat');
 my_kmeans(D, 2);
 ```
 Output:
-![Alt Text](https://github.com/PJunhyuk/kmeans-and-spectral/img/sample_result_1.png)
+![Alt Text](https://github.com/PJunhyuk/kmeans-and-spectral/blob/master/img/sample_result_1.png)
 ```
 cluster times: 
      7
