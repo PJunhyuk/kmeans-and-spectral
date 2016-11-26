@@ -6,6 +6,7 @@ Clustering toy datasets using K-means algorithm and Spectral Clustering algorith
   1. Open toydata file
   1. Set data, and set K which is suitable for it (and sigma for spectral_clust function)
 - Suggested sigma value is 1
+
 #### Sample Usage
 ###### Clustering data_Aggregation using K-means algorithm
 ```
@@ -25,6 +26,7 @@ visualize_result(D, L);
 
 ## Results
 You can check clustering results in form of 'label', and you can check visualized result by using 'visualize_result' function and 'visualize_centroids' function. It is also built in 'my_kmeans' function and 'spectral_clust' function.
+
 And you can check cluster times, and time required on each implementation.
 
 #### Sample Results
