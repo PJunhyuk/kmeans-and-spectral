@@ -67,5 +67,8 @@ All data-set is in order: K-means, Spectral Clustering, and given label.
 - spectral_clust.m : Calculate label using the function of spectral clustering.
 - my_kmeans_no_visualize.m : alculate label using k-mean algorithm, with no data visualization - for spectral_clust function.
 
+## Reference
+[On Spectral Clustering: Analysis and an algorithm](http://www.cs.cmu.edu/afs/cs/user/bhiksha/WWW/courses/mlsp.fall2015/www/assignments/assignment3/nips01_spectral.pdf)
+
 ## License
 [MIT License](https://github.com/PJunhyuk/kmeans-and-spectral/blob/master/LICENSE)
