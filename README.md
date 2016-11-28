@@ -66,3 +66,6 @@ All data-set is in order: K-means, Spectral Clustering, and given label.
 - visualize_centroids.m : Plot graph of centroids.
 - spectral_clust.m : Calculate label using the function of spectral clustering.
 - my_kmeans_no_visualize.m : alculate label using k-mean algorithm, with no data visualization - for spectral_clust function.
+
+## License
+[MIT License](https://github.com/PJunhyuk/kmeans-and-spectral/blob/master/LICENSE)
